@@ -1,0 +1,83 @@
+{
+  "Product": {
+    "title": "Premium Cotton T‑Shirt",
+    "category": "Professional Casual Wear • Export Quality",
+    "wholesale_price": "Wholesale Price",
+    "upon_request": "Upon Request",
+    "moq": "Min. Order",
+    "pcs": "pcs",
+    "sample_title": "Sample Availability",
+    "ready_to_ship": "READY TO SHIP",
+    "sample_desc": "Get a physical sample in 5-7 days to verify fabric quality before bulk commitment.",
+    "buttons": {
+      "quote": "Get Wholesale Quote",
+      "contact": "Contact Factory"
+    }
+  },
+  "Highlights": {
+    "title": "Production Excellence",
+    "items": {
+      "consistency": {
+        "title": "Fabric Consistency",
+        "desc": "Same yarn source across production batches"
+      },
+      "qa": {
+        "title": "Quality Assurance",
+        "desc": "Inline inspection & random batch testing"
+      },
+      "bulk": {
+        "title": "Bulk Optimization",
+        "desc": "Optimized cutting & packing for wholesale orders"
+      },
+      "capacity": {
+        "title": "Factory Capability",
+        "desc": "Monthly capacity: 50,000+ units"
+      }
+    }
+  },
+  "Materials": {
+    "title": "Materials & Fabric Specs",
+    "badge": "TECHNICAL DATA SHEET",
+    "fabric_name": "Combed Cotton N-180",
+    "banner_desc": "High-density weave for superior durability and soft hand-feel.",
+    "table": {
+      "parameter": "Parameter",
+      "grade": "Quality Grade",
+      "value": "Standard / Value",
+      "rows": {
+        "type": "Fabric Type",
+        "weight": "Weight (GSM)",
+        "weave": "Weave Structure",
+        "shrinkage": "Shrinkage Rate",
+        "fastness": "Color Fastness",
+        "breathability": "Breathability"
+      }
+    }
+  },
+  "Sizes": {
+    "title": "Size Specifications",
+    "columns": ["Size", "Chest (cm)", "Length (cm)", "Shoulder (cm)"],
+    "footer": "Measurements are in centimeters. Tolerance ±2 cm. Custom sizing available for bulk orders."
+  },
+  "Colors": {
+    "title": "Available Colors",
+    "footer": "Custom colors available for MOQ orders. Dye lot variation ±5%.",
+    "names": {
+      "Black": "Black",
+      "Gray": "Gray",
+      "Green": "Green",
+      "Forest Rose": "Forest Rose"
+    }
+  },
+  "Manufacturing": {
+    "title": "Manufacturing & Trade Standards",
+    "intro": "We operate with structured manufacturing workflows, consistent material sourcing, and controlled production batches to ensure long-term supply stability for wholesale partners.",
+    "list": [
+      "Consistent fabric sourcing and batch tracking",
+      "Pre-production samples and approval process",
+      "Quality inspection before packaging",
+      "Export documentation support for EU markets"
+    ],
+    "outro": "Designed for retailers, brands, and distributors seeking reliable long-term manufacturing partnerships."
+  }
+}
