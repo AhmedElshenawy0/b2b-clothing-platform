@@ -1,19 +1,19 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useLayoutEffect } from "react";
 import { GlobalOutlined } from "@ant-design/icons";
 
 export const LanguageSwitcher = () => {
   const [currentLocale, setCurrentLocale] = useState("en");
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     setCurrentLocale(localStorage.getItem("lang") || "en");
   }, []);
 
   const toggleLanguage = () => {
     const newLocale = currentLocale === "en" ? "ar" : "en";
     localStorage.setItem("lang", newLocale);
-    window.location.reload(); // إعادة تحميل لتحديث كل القواميس في الصفحات
+    window.location.reload();
   };
 
   return (
