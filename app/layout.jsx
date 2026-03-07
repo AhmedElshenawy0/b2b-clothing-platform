@@ -2,6 +2,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/global/Navbar";
 import { Footer } from "./components/global/Footer";
+import { ConfigProvider } from "antd";
+import AntdRegistry from "./lib/AntdRegistry";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -23,10 +25,13 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}
       >
-        <Navbar />
-        <main className="flex-grow pt-32">{children}</main>
-        <Footer />
-        {/* <div className="min-h-screen bg-white" /> */}
+        <AntdRegistry>
+          <ConfigProvider>
+            <Navbar />
+            <main className="flex-grow pt-32">{children}</main>
+            <Footer />
+          </ConfigProvider>
+        </AntdRegistry>
       </body>
     </html>
   );
