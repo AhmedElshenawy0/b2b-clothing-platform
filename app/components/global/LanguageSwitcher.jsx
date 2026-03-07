@@ -1,19 +1,10 @@
 "use client";
 
-import { useState, useLayoutEffect } from "react";
 import { GlobalOutlined } from "@ant-design/icons";
 
 export const LanguageSwitcher = () => {
-  const [currentLocale, setCurrentLocale] = useState("en");
-
-  useLayoutEffect(() => {
-    setCurrentLocale(localStorage.getItem("lang") || "en");
-  }, []);
-
   const toggleLanguage = () => {
-    const newLocale = currentLocale === "en" ? "ar" : "en";
-    localStorage.setItem("lang", newLocale);
-    window.location.reload();
+    alert("Language switching will be implemented soon!");
   };
 
   return (
@@ -23,7 +14,7 @@ export const LanguageSwitcher = () => {
     >
       <GlobalOutlined className="text-slate-500" />
       <span className="text-[11px] font-black text-slate-700 uppercase">
-        {currentLocale === "en" ? "العربية" : "English"}
+        العربية
       </span>
     </button>
   );

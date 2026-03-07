@@ -5,14 +5,11 @@ import { Input } from "antd";
 import { SearchOutlined } from "@ant-design/icons";
 import { FiMenu } from "react-icons/fi";
 import { motion } from "framer-motion";
-import { useTranslation } from "react-i18next";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 
 const Navbar = () => {
   const [lastScrollY, setLastScrollY] = useState(0);
   const [showNav, setShowNav] = useState(true);
-
-  const { t, i18n } = useTranslation();
 
   const handleScroll = () => {
     const currentY = window.scrollY;
@@ -47,7 +44,7 @@ const Navbar = () => {
         <div className="flex-1 hidden md:flex justify-center">
           <Input
             size="large"
-            placeholder={t("Navbar.searchPlaceholder")}
+            placeholder="Search products..."
             prefix={<SearchOutlined />}
             className="rounded-full shadow-sm w-full max-w-lg"
           />
